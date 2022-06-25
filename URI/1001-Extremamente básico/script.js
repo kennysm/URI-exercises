@@ -1,8 +1,7 @@
 var input = require('fs').readFileSync('stdin1', 'utf8');
-var valores = input.split('\n')
+var PI = 3.14159;
+var raio = parseFloat(input);
+var area = PI * Math.pow(raio, 2);
 
-var A = parseInt(valores.shift());
-var B = parseInt(valores.shift());
-var X = A + B;
+console.log("A=" + area.toFixed(4));
 
-console.log("X = " + X);
